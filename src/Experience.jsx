@@ -2,17 +2,17 @@ export default function Experience()
 {
     return <>
         
-            <mesh position-x={-3} scale={ 1.5 } >
-                <sphereGeometry scale={ 1.5 }/>
+            <mesh position-x={-2}  >
+                <sphereGeometry />
                 <meshBasicMaterial color='orange' />
             </mesh>
-            <mesh position-x={3} scale={ 1.5 } >
-                <boxGeometry scale={ 1.5 }/>
-                <meshBasicMaterial color='purple' />
+            <mesh rotation-y={ Math.PI * 0.25 } position-x={2} scale={ 1.5 } >
+                <boxGeometry />
+                <meshBasicMaterial color='mediumpurple' />
             </mesh>
-            <mesh scale={ 10 } >
-                <planeBufferGeometry scale={ 1.5 }/>
-                <meshBasicMaterial color='green' />
+            <mesh position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
+                <planeGeometry />
+                <meshBasicMaterial color="greenyellow" />
             </mesh>
        
     </>
