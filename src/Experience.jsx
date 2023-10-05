@@ -5,10 +5,12 @@ export default function Experience()
 {
 
     const cubeRef = useRef()
+    const planeRef = useRef()
 
     useFrame(() => 
     {
         cubeRef.current.rotation.y += 0.01
+        planeRef.current.rotation.z += 0.01
     })
 
     return <>
@@ -23,7 +25,7 @@ export default function Experience()
                 <meshBasicMaterial color='mediumpurple' />
             </mesh>
 
-            <mesh position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
+            <mesh ref={ planeRef } position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
                 <planeGeometry />
                 <meshBasicMaterial color="greenyellow" />
             </mesh>
