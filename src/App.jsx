@@ -1,19 +1,13 @@
 import { Canvas } from '@react-three/fiber'
 import './styles.css'
+import Experience from './Experience.jsx'
 
 function App() {
 
   return (
-    <>
-  
     <Canvas>
-      <mesh>
-        <torusKnotGeometry />
-        <meshNormalMaterial />
-      </mesh>
+      <Experience />
     </Canvas>
-  
-    </>
 
   
   )
